@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E2865ED2047C630005AE653 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2865EC2047C630005AE653 /* AuthService.swift */; };
+		2E2865EF2047CCA2005AE653 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2865EE2047CCA2005AE653 /* LoginVC.swift */; };
 		2E75E20820466FE0001A241D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E75E20720466FE0001A241D /* AppDelegate.swift */; };
 		2E75E20A20466FE0001A241D /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E75E20920466FE0001A241D /* FirstViewController.swift */; };
 		2E75E20C20466FE0001A241D /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E75E20B20466FE0001A241D /* SecondViewController.swift */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E2865EC2047C630005AE653 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		2E2865EE2047CCA2005AE653 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		2E75E20420466FE0001A241D /* FirebaseSignIn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseSignIn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E75E20720466FE0001A241D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E75E20920466FE0001A241D /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +80,7 @@
 				2E75E21220466FE0001A241D /* LaunchScreen.storyboard */,
 				2E75E21520466FE0001A241D /* Info.plist */,
 				2E75E21B2046715A001A241D /* GoogleService-Info.plist */,
+				2E2865EE2047CCA2005AE653 /* LoginVC.swift */,
 			);
 			path = FirebaseSignIn;
 			sourceTree = "<group>";
@@ -84,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				2E75E21E2046732B001A241D /* DataService.swift */,
+				2E2865EC2047C630005AE653 /* AuthService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -243,6 +249,8 @@
 			files = (
 				2E75E20C20466FE0001A241D /* SecondViewController.swift in Sources */,
 				2E75E20820466FE0001A241D /* AppDelegate.swift in Sources */,
+				2E2865EF2047CCA2005AE653 /* LoginVC.swift in Sources */,
+				2E2865ED2047C630005AE653 /* AuthService.swift in Sources */,
 				2E75E20A20466FE0001A241D /* FirstViewController.swift in Sources */,
 				2E75E21F2046732B001A241D /* DataService.swift in Sources */,
 			);
