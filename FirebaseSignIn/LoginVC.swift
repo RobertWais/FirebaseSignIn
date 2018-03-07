@@ -10,6 +10,7 @@ import UIKit
 
 class LoginVC: UIViewController {
 
+    @IBOutlet var imageView: UIImageView!
     @IBOutlet var emailField: UITextField!
     @IBOutlet var passwordField: UITextField!
     
@@ -26,7 +27,17 @@ class LoginVC: UIViewController {
    
     @IBAction func signInBtnPressed(_ sender: Any) {
         if emailField.text != nil && passwordField.text != nil{
-            AuthService.instance.loginUser(email: emailField.text!, password: passwordField.text!, complete: { (success, error) in
+            AuthService.instance.loginUser(email: emailField.text!, password: passwordField.text!, complete: { (success, error, im)  in
+                if success {
+                    print("User Accepted")
+                    self.imageView.image = im
+                }else{
+                    print("NO")
+                    print(String(describing: error?.localizedDescription))
+                }
+            })
+            /*
+            AuthService.instance.registerUser(email: emailField.text!, password: passwordField.text!, complete: { (success, error) in
                 if success {
                     print("User Accepted")
                 }else{
@@ -34,6 +45,7 @@ class LoginVC: UIViewController {
                     print(String(describing: error?.localizedDescription))
                 }
             })
+ */
         }
     }
     

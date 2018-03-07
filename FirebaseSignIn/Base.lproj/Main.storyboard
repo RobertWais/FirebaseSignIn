@@ -123,20 +123,29 @@
                                     <action selector="signInBtnPressed:" destination="gia-vo-yvt" eventType="touchUpInside" id="7rk-Pb-OVG"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="X24-MZ-oWw">
+                                <rect key="frame" x="40" y="152" width="295" height="154.5"/>
+                                <color key="backgroundColor" red="0.0" green="0.1383306084" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <constraints>
                             <constraint firstItem="ZSA-gJ-4yt" firstAttribute="top" secondItem="WG6-Ql-DBZ" secondAttribute="top" constant="50" id="3Le-rM-RI7"/>
+                            <constraint firstItem="X24-MZ-oWw" firstAttribute="leading" secondItem="WG6-Ql-DBZ" secondAttribute="leading" constant="40" id="7LG-2s-yEe"/>
                             <constraint firstItem="G2A-BF-N9i" firstAttribute="centerX" secondItem="WG6-Ql-DBZ" secondAttribute="centerX" id="B2O-P0-lzW"/>
+                            <constraint firstItem="G2A-BF-N9i" firstAttribute="top" secondItem="X24-MZ-oWw" secondAttribute="bottom" constant="10" id="E3v-Mr-agk"/>
                             <constraint firstItem="ZSA-gJ-4yt" firstAttribute="leading" secondItem="WG6-Ql-DBZ" secondAttribute="leading" constant="40" id="R7S-3n-nRy"/>
                             <constraint firstItem="G2A-BF-N9i" firstAttribute="centerY" secondItem="WG6-Ql-DBZ" secondAttribute="centerY" id="Wt6-bH-DcX"/>
+                            <constraint firstItem="X24-MZ-oWw" firstAttribute="top" secondItem="ZSA-gJ-4yt" secondAttribute="bottom" constant="10" id="X6Y-hc-feJ"/>
                             <constraint firstItem="ZSA-gJ-4yt" firstAttribute="centerX" secondItem="WG6-Ql-DBZ" secondAttribute="centerX" id="csH-DF-Xrn"/>
                             <constraint firstItem="WG6-Ql-DBZ" firstAttribute="trailing" secondItem="ZSA-gJ-4yt" secondAttribute="trailing" constant="40" id="jMa-aQ-i4W"/>
+                            <constraint firstItem="WG6-Ql-DBZ" firstAttribute="trailing" secondItem="X24-MZ-oWw" secondAttribute="trailing" constant="40" id="nTt-0b-DaG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="WG6-Ql-DBZ"/>
                     </view>
                     <connections>
                         <outlet property="emailField" destination="B80-8P-UN2" id="FmT-uJ-yEx"/>
+                        <outlet property="imageView" destination="X24-MZ-oWw" id="46S-cl-oYZ"/>
                         <outlet property="passwordField" destination="fot-wd-dsf" id="Qot-8D-IRA"/>
                     </connections>
                 </viewController>
